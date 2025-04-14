@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <title>Táblázat - CRUD</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="table.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Web-programozás-1 Előadás Házi feladat</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Főoldal</a></li>
+      <li><a href="table.html" class="active">Táblázat</a></li>
+      <li><a href="html5.html">HTML5 API-k</a></li>
+      <li><a href="chart.html">ChartJS</a></li>
+      <li><a href="ajax.html">AJAX</a></li>
+      <li><a href="oojs.html">OO JS</a></li>
+      <li><a href="react.html">React</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2>CRUD Táblázat</h2>
+    <form id="dataForm">
+      <input type="text" id="name" placeholder="Név" required minlength="2">
+      <input type="number" id="age" placeholder="Kor" required min="1" max="120">
+      <input type="text" id="city" placeholder="Város" required minlength="2">
+      <input type="text" id="hobby" placeholder="Hobbi" required minlength="2">
+      <button type="submit">Mentés</button>
+      <button type="reset">Űrlap törlése</button>
+    </form>
+
+    <input type="text" id="search" placeholder="Keresés név szerint...">
+
+    <table border="1" id="dataTable">
+      <thead>
+        <tr>
+          <th data-sort="name">Név</th>
+          <th data-sort="age">Kor</th>
+          <th data-sort="city">Város</th>
+          <th data-sort="hobby">Hobbi</th>
+          <th>Művelet</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </main>
+
+  <footer>
+    <p>Név: Borbély Balázs, Balog Dávid Zoltán | Neptun: ONK1R0, XOHXFC</p>
+  </footer>
+</body>
+</html>
