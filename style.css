@@ -85,10 +85,7 @@ body {
   }
   
   .board {
-    display: grid;
-    grid-template-columns: repeat(3, 100px);
-    grid-template-rows: repeat(3, 100px);
-    gap: 5px;
+    margin-top: 10px;
   }
   
   .board-row {
@@ -96,22 +93,16 @@ body {
   }
   
   .square {
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     font-size: 24px;
     text-align: center;
-    vertical-align: middle;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
+    line-height: 60px;
+    border: 1px solid #333;
     cursor: pointer;
+    background-color: #f2f2f2;
   }
   
-  .square:focus {
+  button.square:focus {
     outline: none;
-  }
-  
-  .status {
-    margin-bottom: 20px;
-    font-size: 18px;
-  }
-  
+  }  
