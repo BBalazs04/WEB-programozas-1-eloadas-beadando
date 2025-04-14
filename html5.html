@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Teszt Elek">
+  <meta name="description" content="Webprogramozás 1 - HTML5 API példák">
+  <title>HTML5 API példák</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="html5.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Webprogramozás 1 – HTML5 API-k bemutatása</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Főoldal</a></li>
+        <li><a href="table.html">Táblázat</a></li>
+        <li><a href="html5.html" class="active">HTML5 API-k</a></li>
+        <li><a href="chart.html">ChartJS</a></li>
+        <li><a href="ajax.html">AJAX</a></li>
+        <li><a href="oojs.html">OO JS</a></li>
+        <li><a href="react.html">React</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="storage">
+      <h2>Web Storage</h2>
+      <p>Írj be valamit, majd mentsd el és olvasd vissza localStorage-ból:</p>
+      <input type="text" id="storageInput" placeholder="Írj be valamit">
+      <button id="saveBtn">Mentés</button>
+      <button id="loadBtn">Betöltés</button>
+      <p id="storedValue"></p>
+    </section>
+
+    <section id="worker">
+      <h2>Web Worker</h2>
+      <p>Nagy számítás futtatása háttérszálon:</p>
+      <button id="geoBtn">Számítás indítása</button>
+      <p id="workerResult"></p>
+    </section>
+
+    <section id="sse">
+      <h2>Server-Sent Events</h2>
+      <p>Figyelem! Csak működő szerver esetén működik:</p>
+      <div id="sseOutput">Nem érkezett esemény</div>
+    </section>
+
+    <section id="geo">
+      <h2>Geolocation API</h2>
+      <p>A földrajzi helyed lekérése a böngészőből:</p>
+      <button>Helyzet lekérése</button>
+      <p id="geoOutput"></p>
+    </section>
+
+    <section id="drag">
+      <h2>Drag and Drop API</h2>
+      <p>Húzd rá a piros dobozt az alatta lévő területre:</p>
+      <div id="dragZone">
+        <div id="draggable" draggable="true" style="width:50px;height:50px;background:red;"></div>
+        <div id="dropzone" style="width:100px;height:100px;border:2px dashed #000;margin-top:10px;"></div>
+      </div>
+    </section>
+
+    <section id="canvas">
+      <h2>Canvas</h2>
+      <p>Kék téglalap rajzolása HTML5 Canvas-szal:</p>
+      <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000"></canvas>
+    </section>
+
+    <section id="svg">
+      <h2>SVG</h2>
+      <p>Zöld kör SVG használatával:</p>
+      <svg width="200" height="100">
+        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="green" />
+      </svg>
+    </section>
+  </main>
+
+  <footer>
+    <p>Név: Borbély Balázs, Balog Dávid Zoltán | Neptun: ONK1R0, XOHXFC</p>
+  </footer>
+</body>
+</html>
