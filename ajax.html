@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AJAX API feladat</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="ajax.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Web-programozás-1 Előadás Házi feladat</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Főoldal</a></li>
+      <li><a href="table.html">Táblázat</a></li>
+      <li><a href="html5.html">HTML5 API-k</a></li>
+      <li><a href="chart.html">ChartJS</a></li>
+      <li><a href="ajax.html" class="active">AJAX</a></li>
+      <li><a href="oojs.html">OO JS</a></li>
+      <li><a href="react.html">React</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2>AJAX – API kapcsolat</h2>
+
+    <section>
+      <h3>Adatlekérés (READ)</h3>
+      <button id="loadBtn">Adatok betöltése</button>
+      <div id="dataList"></div>
+      <div id="heightStats"></div>
+    </section>
+
+    <section>
+      <h3>Új adat (CREATE)</h3>
+      <form id="createForm">
+        <input type="text" id="cname" placeholder="Név" maxlength="30" required>
+        <input type="text" id="cheight" placeholder="Magasság" maxlength="30" required>
+        <input type="text" id="cweight" placeholder="Súly" maxlength="30" required>
+        <button type="submit">Mentés</button>
+        <span id="createMsg"></span>
+      </form>
+    </section>
+
+    <section>
+      <h3>Adatmódosítás (UPDATE)</h3>
+      <input type="text" id="uid" placeholder="ID">
+      <button id="getById">Adat betöltése ID alapján</button><br><br>
+      <form id="updateForm">
+        <input type="text" id="uname" placeholder="Név" maxlength="30" required>
+        <input type="text" id="uheight" placeholder="Magasság" maxlength="30" required>
+        <input type="text" id="uweight" placeholder="Súly" maxlength="30" required>
+        <button type="submit">Módosítás</button>
+        <span id="updateMsg"></span>
+      </form>
+    </section>
+
+    <section>
+      <h3>Adattörlés (DELETE)</h3>
+      <input type="text" id="did" placeholder="ID">
+      <button id="deleteBtn">Törlés</button>
+      <span id="deleteMsg"></span>
+    </section>
+  </main>
+
+  <footer>
+    <p>Név: Borbély Balázs, Balog Dávid Zoltán | Neptun: ONK1R0, XOHXFC</p>
+  </footer>
+</body>
+</html>
