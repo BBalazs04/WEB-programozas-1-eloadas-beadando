@@ -31,6 +31,10 @@ loadBtn.addEventListener("click", () => {
         const max = Math.max(...heights);
         heightStats.innerHTML = `Magasság összesen: ${sum} cm<br>Átlag: ${avg} cm<br>Legnagyobb: ${max} cm`;
       }
+      else
+      {
+        heightStats.innerHTML = `Magasság összesen: ${0} cm<br>Átlag: ${0} cm<br>Legnagyobb: ${0} cm`;
+      }
     });
 });
 
