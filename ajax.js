@@ -76,6 +76,7 @@ getByIdBtn.addEventListener("click", () => {
     .then(data => {
       const entry = data.list.find(item => item.id == id);
       if (entry) {
+        updateMsg.textContent = null;
         document.getElementById("uname").value = entry.name;
         document.getElementById("uheight").value = entry.height;
         document.getElementById("uweight").value = entry.weight;
